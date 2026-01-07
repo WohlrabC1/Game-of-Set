@@ -28,8 +28,7 @@ public class MainPanel extends JPanel implements ActionListener {
         exitButton.setBounds(230, 600, 100, 40);
         exitButton.setFont(new Font("Serif", Font.BOLD, 20));
 
-        // Register listeners after construction to avoid "this" escaping during
-        // initialization
+        
         SwingUtilities.invokeLater(() -> exitButton.addActionListener(this));
 
         addThreeButton = new JButton("ADD 3");
@@ -148,9 +147,6 @@ public class MainPanel extends JPanel implements ActionListener {
         for (int r = 0; r < rows; r++) {
             for (int c = 0; c < cols; c++) {
                 try {
-                    // Use the card from the game board so redrawing the grid
-                    // always displays the actual cards (no duplicates from
-                    // random selection). Construct filename from Card.toString().
                     Card card = board.getCard(r, c);
                     String fileName = "cards/" + card.toString() + ".png";
                     img = ImageIO.read(new File(fileName));
@@ -164,7 +160,6 @@ public class MainPanel extends JPanel implements ActionListener {
                 cards.add(cp);
             }
         }
-        // Remove existing components and re-add updated grid and buttons
         removeAll();
         add(cards);
         add(addThreeButton);
