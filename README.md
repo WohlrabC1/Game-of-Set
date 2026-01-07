@@ -3,7 +3,12 @@ __________________________________
 
 Set is a pattern-recognition card game where players identify groups of three cards that form a valid "set." Each card has four attributes, and for each attribute, the values must be either all the same or all different.
 
-Main Screen: <img width="748" height="579" alt="Screenshot 2026-01-06 at 10 26 22 PM" src="https://github.com/user-attachments/assets/30ad99df-cf9d-4dcf-ac8c-65baa4e0a02b" />
+
+Main Screen:
+
+<img width="748" height="579" alt="Screenshot 2026-01-06 at 10 26 22 PM" src="https://github.com/user-attachments/assets/30ad99df-cf9d-4dcf-ac8c-65baa4e0a02b" />
+
+
 
 How it's made:
 ____________________________________
