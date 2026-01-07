@@ -6,12 +6,8 @@ import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 import java.awt.image.BufferedImage;
-// Random was previously used for image selection; no longer needed.
 
-/**
- * MainPanel - single clean implementation (restored from original provided
- * content)
- */
+
 public class MainPanel extends JPanel implements ActionListener {
     private static final long serialVersionUID = 1L;
     private JButton exitButton;
